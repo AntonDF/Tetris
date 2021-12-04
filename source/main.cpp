@@ -37,9 +37,14 @@ void init(){
   glClearColor(0.0, 0.0, 0.0, 1.0);
   glHint (GL_LINE_SMOOTH_HINT, GL_NICEST);
   glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
+<<<<<<< Updated upstream
   board.gl_init();
   piece.gl_init();
   
+=======
+  //board.init();
+  //piece.gl_init();
+>>>>>>> Stashed changes
 }
 
 int main(void)
@@ -59,7 +64,7 @@ int main(void)
   glfwWindowHint(GLFW_SAMPLES, 10);
   
   
-  window = glfwCreateWindow(1024, 768, "TETRIS", NULL, NULL);
+  window = glfwCreateWindow(1024, 516, "TETRIS", NULL, NULL);
   if (!window){
     glfwTerminate();
     exit(EXIT_FAILURE);
